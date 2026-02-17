@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Eve! 🎈</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts for elegant typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Your custom styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loader Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <h1>✨ Happy Birthday Eve! ✨</h1>
+            <button class="start-btn" id="play">
+                <i class="fas fa-heart"></i> Start <i class="fas fa-heart"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Audio Player -->
+    <audio class="song" controls loop>
+        <source src="music.mp3" type="audio/mpeg">
+        Your browser isn't invited for super fun audio time.
+    </audio>
+
+    <!-- Floating Balloons Container (will be populated by JS) -->
+    <div class="balloon-container" id="balloonContainer"></div>
+
+    <!-- Confetti Canvas -->
+    <canvas id="confetti"></canvas>
+
+    <!-- Main Content -->
+    <div class="main-content" id="mainContent">
+        <div class="container pt-5">
+            <div class="row">
+                <!-- Banner Image -->
+                <div class="col-12 col-xl-6 mx-auto text-center">
+                    <img src="img/banner.png" alt="Happy Birthday Banner" class="img-fluid">
+                </div>
+
+                <!-- Birthday Name -->
+                <div class="col-12 text-center">
+                    <div id="name" class="area">Eve</div>
+                </div>
+
+                <!-- Typing Animation -->
+                <div class="col-12 text-center">
+                    <div class="type-wrap">
+                        <div id="typed-strings" class="typing">
+                            <h2>Happy Birthday <i id="nae">Eve</i></h2>
+                            <h2>Have a wonderful day</h2>
+                            <h2>Filled with joy and happiness</h2>
+                            <h2>You're the best friend ever! 💝</h2>
+                            <h2>Enjoy your special day! 🎉</h2>
+                        </div>
+                        <span id="typed" style="white-space:pre;"></span>
+                    </div>
+                </div>
+
+                <!-- Image Gallery Section - This will be populated by JavaScript -->
+                <div class="col-12">
+                    <h2 class="gallery-title">
+                        <i class="fas fa-camera"></i> Beautiful Memories with Eve <i class="fas fa-camera"></i>
+                    </h2>
+                    <div class="gallery-grid" id="galleryGrid">
+                        <!-- Gallery images will be added here by script.js -->
+                    </div>
+                </div>
+
+                <!-- Personal Message Card -->
+                <div class="col-12 col-lg-8 mx-auto">
+                    <div class="message-card">
+                        <h3><i class="fas fa-heart" style="color: #ff6b6b;"></i> For My Dear Eve <i class="fas fa-heart" style="color: #ff6b6b;"></i></h3>
+                        <p>
+                            On this special day, I want you to know how much your friendship means to me. 
+                            You bring light, laughter, and love into my life, and I'm so grateful to have you as my friend.
+                        </p>
+                        <p>
+                            May your birthday be as wonderful and beautiful as you are. Here's to many more years of 
+                            friendship, adventures, and beautiful memories together!
+                        </p>
+                        <div class="signature">
+                            With love,<br>
+                            Your Friend 💝 Chimdi
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Birthday Cake - Now at the bottom -->
+                <div class="col-6 cake">
+                    <!-- <img src="img/cake.gif" alt="Birthday Cake" class="img-fluid"> -->
+                </div>
+            </div>
+        </div>
+        
+        <!-- Balloon Border Decoration -->
+        <img src="img/Balloon-Border.png" width="100%" class="balloon-border" alt="Balloon Border">
+    </div>
+
+   <!-- Scripts -->
+<script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>
+<script src="js/jquery.js"></script>
+<!-- Bootstrap JS with Popper.js included -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/typed.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
